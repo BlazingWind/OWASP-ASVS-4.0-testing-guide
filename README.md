@@ -8,6 +8,8 @@ The aim of this project is to assist companies and organizations with getting st
 
 The project has been developed as part of my bachelor degree studies. 
 
+## Download
+[PDF version of OWASP ASVS 4.0 testing guide](https://github.com/BlazingWind/OWASP-ASVS-4.0-testing-guide/raw/main/OWASP-ASVS-testing-guide.pdf)
 ## Contributions
 
 Contributions are welcome - please remember to use the format that the guide has been already using for each control, namely:
