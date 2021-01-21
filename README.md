@@ -7,3 +7,30 @@ The OWASP ASVS 4.0 testing guide is an unofficial supporting document to the [OW
 The aim of this project is to assist companies and organizations with getting started with using OWASP ASVS.
 
 The project has been developed as part of my bachelor degree studies. 
+
+## Contributions
+
+Contributions are welcome - please remember to use the format that the guide has been already using for each control, namely:
+
+```markdown
+# x.x.x Control title
+
+> Control from ASVS
+CWE number
+
+## Explanation
+What is the control all about - explain technical termns. 
+Explain consequences of not being compliant with the control.
+
+## Testing methods
+
+If you know of already exisiting tools that could be used to test the control - either open source or that provide community edition - describe them here. 
+Explain how to test the control manually, if possible.
+
+## Control
+
+Describe success criteria for the control. When can one deem the control failed?
+
+## Resources
+Provide additional links that expand on the topic or can make it easier to understand the control. If you can, link to a relevant OWASP Cheatsheet or a chapter from OWASP Web Security Testing Guide.
+```
