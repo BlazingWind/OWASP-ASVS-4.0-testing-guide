@@ -1,9 +1,8 @@
 """
 Script testing 14.4.1 control from OWASP ASVS 4.0:
-'Verify that every HTTP response contains a content type header specifying a safe character set (e.g., UTF-8, ISO 8859-1).' 
-Since the creators of ASVS are updating this requirement in the next version of ASVS to: 
+
 “Verify that every HTTP response contains a Content-Type header. text/*, /+xml and application/xml content types should also specify a safe character set (e.g., UTF-8, ISO-8859-1).” 
-the script will raise an alert if 'Content-Type' header is present and if the header specifies a safe charset for text/*, /+xml and application/xml content types.
+The script will raise an alert if 'Content-Type' header does not specify a safe charset for text/*, /+xml and application/xml content types.
 """
 import re
 
