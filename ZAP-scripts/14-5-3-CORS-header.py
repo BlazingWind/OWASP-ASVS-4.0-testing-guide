@@ -15,10 +15,7 @@ alertInfo = "Control failure"
 cweID = 346
 wascID = 0
 
-
 origin = "exampletestsite.com"
-
-#TODO find more use cases for evidence - default pages for Apache, nginx, IIS etc.
 
 def scanNode(sas, msg):
   origMsg = msg;
