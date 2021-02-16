@@ -10,6 +10,24 @@ The header Content-Type denotes what the content is encoded in. By declaring Con
 
 Not setting a charset in the Content-Type header can cause the browser to attempt to sniff the charset. An attacker can send a payload by encoding special characters in f. ex. UTF-7 and bypass application's defensive measures. This is not an issue in modern browsers support, since UTF-7 is not supported anymore, but nevertheless it is a best practice not to allow the browser to sniff the charset by setting it in Content-Type header. 
 
+# User Story and Scenario
+
+Feature: HTTP response content type header specifies safe character set
+	In order to prevent unsafe character sets which could obfuscate malicious activity
+	As a Security Engineer
+	I want to allow only safe character sets in HTTP responses
+
+Scenario: Specify allowed character sets
+    Given an HTTP response
+    And an HTTP Security header
+    When specifying allowable character sets
+    Then only UTF-8 OR ISO 8859-1 should be allowed
+
+Examples:
+| text/html; charset=utf-8 |
+| text/html; charset=iso-8859-1 |
+
+
 # Testing methods
 
 This control can be tested via a proxy. Observing the traffic in DevTools or sending single requests using curl or other banner grabbing tools is not recommended, since all resources should use a 'Content-Type' header and additionally the types specified above should contain a charset.

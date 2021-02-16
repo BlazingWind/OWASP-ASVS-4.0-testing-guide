@@ -24,6 +24,9 @@ CWE number
 What is the control all about - explain technical termns. 
 Explain consequences of not being compliant with the control.
 
+## User Stories and Scenarios
+Have you written an associated User Story that can be used by teams to integrate the work relating to implementation of the control easier ? This supports both defining clear user stories as the scenarios which can be developed for testing
+
 ## Testing methods
 
 If you know of already exisiting tools that could be used to test the control - either open source or that provide community edition - describe them here. 

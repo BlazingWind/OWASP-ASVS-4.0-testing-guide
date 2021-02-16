@@ -12,6 +12,23 @@ Developers might incorrectly set a value for Content-Type header for a response'
 
 The header prevents that from happening.
 
+# User Story and Scenario
+
+Feature: HTTP response prevents browsers from overriding response content type
+ 	In order to prevent MIME-based attacks or MIME sniffing
+ 	As a Security Engineer
+ 	I want to ensure only the server-provided Content type is allowed
+
+
+Scenario: Secure Content type responses from being modified by server
+	Given an HTTP response
+	And an HTTP Security header
+	When determining Content type options
+	Then nosniff is enforced
+
+Examples:
+| x-content-type-options: nosniff |
+
 # Testing methods
 
 This control can be tested in DevTools, via a proxy or by viewing response returned by nmap script http-headers. A request can be also sent using curl or using any other banner grabbing tool. 
