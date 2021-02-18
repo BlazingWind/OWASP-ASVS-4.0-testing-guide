@@ -8,22 +8,6 @@ CWE 1026
 
 Using older versions of software packages, for example jQuery, may allow for exploitation of XSS on a website. This problem is also described in OWASP Top 10  "A9: Using Components with Known Vulnerabilities". The problem of using known vulnerable components is very spread, but essential to fix.
 
-# User Story and Scenario
-
-Feature: Identification of known vulnerable dependencies at build or compile time
-
-	As a Security Engineer
-	I want to ensure known vulnerabilities are identified when I build/compile my application
-	So that I can identify and remediate vulnerable dependencies
-
-
-Scenario: Integrated vulnerability checker software into the build/compile process
-
-	Given a build and deployment process
-	When I deploy my application
-	Then I ensure I’m identifying any potentially vulnerable dependencies
-
-
 # Testing methods
 
 There are several tools that can be used for checking dependencies such as OWASP dependency-check, Retire.js and many others. Consult [OWASP Cheat Sheet Vulnerable Dependency Management](https://cheatsheetseries.owasp.org/cheatsheets/Vulnerable_Dependency_Management_Cheat_Sheet.html) for more recommendations and best practices.
