@@ -8,22 +8,6 @@ CWE 1002
 
 Default configurations and code may contain users, credentials or open ports and overall lower security hardening, which is typically used for development.
 
-# User Story and Scenario
-
-Feature: Ensure only required artefacts in the production environment are deployed
-
-	As a Security Engineer
-	I want to ensure that I identity and remove any *artefacts* that aren’t required to run my application in production
-	So that I can reduce the attack surface of my application
-
-Scenario: Ensure there are no unnecessary *artefacts* in my production environment
-
-	Given a build and deployment process
-	When I deploy my application
-	Then I define the *artefacts* which aren’t deployed into production
-
-	artefacts = {features, documentation, samples, configuration, users}
-
 # Testing methods
 
 Based on information gained about the backend systems from other controls such as 14.2.1, 14.3.1 and 14.3.3 find default configuration for the component in its documentation. Afterwards check  whether it is present in the application.
