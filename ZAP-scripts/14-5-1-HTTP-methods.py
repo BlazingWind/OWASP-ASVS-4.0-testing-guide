@@ -39,7 +39,9 @@ def scanNode(sas, msg):
 
     code = str(msg.getResponseHeader().getStatusCode())
     if (re.search(pattern,code)):
-      body = msg.getResponseBody().toString()
+      #set response and request body to empy JSON so it can be parsed correctly
+      msg.setResponseBody("{}") 
+      msg.setRequestBody("{}")
       sas.raiseAlert(alertRisk, alertReliability, alertTitle, alertDescription, 
         msg.getRequestHeader().getURI().toString(), 
         i, "", alertInfo, alertSolution[0], "", cweID, wascID, msg);
@@ -47,5 +49,4 @@ def scanNode(sas, msg):
 
 def scan(sas, msg, param, value):
   pass
-
 
