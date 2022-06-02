@@ -1,6 +1,10 @@
 """
-Script testing 14.3.1 control from OWASP ASVS 4.0:
+Credit to BlazingWind on Github for this script:https://github.com/BlazingWind/OWASP-ASVS-4.0-testing-guide/blob/main/ZAP-scripts/14-3-1-Error-messages.py
+
+Script testing 14.3.1 and 7.4.1 controls from OWASP ASVS 4.0:
 'Verify that web or application server and framework error messages are configured to deliver user actionable, customized responses to eliminate any unintended security disclosures.'
+
+'Verify that a generic message is shown when an unexpected or security sensitive error occurs, potentially with a unique ID which support personnel can use to investigate. (C10)'
 
 The script attempts to trigger errors in a web application and checks the response for any software component disclosure - if it finds one, it raises an alert. Most of the attacks are based on OWASP WSTG v4.1
 chapter 8.1 Testing for Error Code.
@@ -13,7 +17,7 @@ alertRisk = 0
 alertReliability = 1
 alertSolution = ["Configure the web server to diplay a custom, user-actionable error page instead.", ""]
 alertInfo = "Control failure"
-cweID = 209
+cweID = "209 and 210"
 wascID = 0
 
 pattern = re.compile(r"[4-5][0-9]{2}")
