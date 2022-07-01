@@ -10,7 +10,6 @@ Find more about the project in an article on ZAProxy's website: [Automate checki
 
 ## Download
 [PDF version of OWASP ASVS 4.0 testing guide](https://github.com/BlazingWind/OWASP-ASVS-4.0-testing-guide/raw/main/OWASP-ASVS-testing-guide.pdf)
-## Contributions
 
 ## Contributions
 Check out CONTRIBUTING.md
