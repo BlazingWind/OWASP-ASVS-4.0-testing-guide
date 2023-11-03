@@ -73,7 +73,7 @@ def scanNode(sas, msg):
   msg.setRequestHeader(prime + "\r\n\r\n")
   sendMsg(sas, msg, alertParam)
 
-def scan(sas, msg, param, value):
+def scan(sas, msg, param, value=None):
   pass
 
 def sendMsg(sas, msg, alertParam):
