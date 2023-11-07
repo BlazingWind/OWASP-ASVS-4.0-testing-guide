@@ -17,7 +17,7 @@ alertRisk = 0
 alertReliability = 1
 alertSolution = ["Configure the web server to diplay a custom, user-actionable error page instead.", ""]
 alertInfo = "Control failure"
-cweID = "209 and 210"
+cweID = 209
 wascID = 0
 
 pattern = re.compile(r"[4-5][0-9]{2}")
