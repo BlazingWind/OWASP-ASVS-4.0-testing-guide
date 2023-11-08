@@ -28,7 +28,7 @@ def scan(sas, msg, param, value):
   cweID = 147
   wascID = 0
  
-  common_imap_elements = ["imap attack", "", "\\", "'", "@", "#", "!", "|", '"']
+  common_imap_elements = ["", "\\", "'", "@", "#", "!", "|", '"']
 
 
   # Copy requests before reusing them
@@ -37,7 +37,7 @@ def scan(sas, msg, param, value):
   
   attack = ""
   for element in common_imap_elements:
-    attack += element
+    attack = "imap attack" + element
       
     # setParam (message, parameterName, newValue)
     sas.setParam(msg, param, attack);
